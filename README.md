@@ -31,6 +31,42 @@ Aplicar técnicas de análisis exploratorio, estadístico y modelamiento de seri
 9. Evaluación del modelo mediante residuos y métricas de error.
 10. Pronóstico futuro de ventas.
 
+## Visualizaciones del Proyecto 
+
+### Serie de Tiempo
+
+![Serie de tiempo](SERIE_TIEMPO.png)
+
+La serie de tiempo muestra el comportamiento de las ventas simuladas a lo largo del periodo analizado. Se observa que los valores fluctúan alrededor de una media estable, sin presentar una tendencia creciente o decreciente marcada.
+
+### Modelo ARIMA
+
+![Modelo ARIMA](MODELO_ARIMA.png)
+
+El gráfico del modelo ARIMA permite comparar los valores reales con los valores ajustados por el modelo. Las predicciones se mantienen cercanas al promedio histórico, lo cual es coherente con una serie estacionaria.
+
+## Análisis estadístico
+
+Los principales indicadores estadísticos obtenidos fueron:
+
+| Indicador | Valor |
+|---|---:|
+| Media | 99.48 |
+| Moda | 86.90 |
+| Desviación estándar | 4.54 |
+| Varianza | 20.62 |
+
+Estos resultados muestran que la serie mantiene un comportamiento estable, con valores de ventas cercanos a una media de 100 unidades y una dispersión moderada.
+
+## Modelo ARIMA
+
+Se implementó un modelo `ARIMA(1,0,1)` debido a que la serie fue identificada como estacionaria.
+
+- `p = 1`: considera el valor anterior de la serie.
+- `d = 0`: no se aplica diferenciación, ya que la serie es estacionaria.
+- `q = 1`: incorpora el error del periodo anterior para mejorar el ajuste del modelo.
+
+
 ## Resultados principales
 
 La serie simulada presentó un comportamiento estacionario, ya que los valores de ventas fluctuaron alrededor de una media estable cercana a 100 unidades, sin evidenciar una tendencia creciente o decreciente marcada.
