@@ -1,9 +1,5 @@
 # Pronóstico de Ventas con Series de Tiempo y Modelo ARIMA en Python
 
-## Objetivo principal
-
-Desarrollar un proyecto de análisis y pronóstico de ventas mediante series de tiempo, aplicando técnicas de exploración de datos, validación de estacionariedad y modelamiento ARIMA en Python.
-
 ## Descripción del proyecto
 
 Este proyecto desarrolla un análisis de series de tiempo utilizando Python, con el objetivo de evaluar la estacionariedad de una serie simulada de ventas semanales e implementar un modelo ARIMA para generar pronósticos futuros.
